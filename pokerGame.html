@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+      <head>
+            <title>Poker Game</title>
+            <meta charset="utf-8" />
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet" type="text/css"/>
+	    <link rel="stylesheet" type="text/css" href="poker.css"></link>
+            <script src="game.js"></script>
+	    <script src="dealer.js"></script>
+      </head>
+      
+      <body onload="newGame()">
+            <main>
+                  <canvas id="playerBoard" width="600px" height="500px">sdasd</canvas>
+		<section class="GameStatistics">
+			<h4>Game Statistics</h4>
+			<section>Pool:<section id="pool">$0</section></section>
+			<section>Cards In Deck<section id="cards">0</section></section>
+		</section>
+		<section id="gameActivity" class="log">
+			<h4>Activity</h4>
+		</section>
+                  <p>Current Balance: <section id="balance"></section></p>
+                  <section class="playerOptions">
+                        <h4>Player Options</h4>
+                        <input type="button" value="fold" onclick="dealCards()"></input>
+                        <input type="button" value="bet" onclick="bet()"></input>
+                        <input type="number" id="betAmount" value="0" min=0 max=1000></input>
+                        <input type="button" value="check" onclick="check()"></input>
+                        <input type="button" value="call" onclick="call()"></input>
+                  </section>
+		<script src="graphics.js"></script>
+            </main>
+      </body>
+      
+</html>

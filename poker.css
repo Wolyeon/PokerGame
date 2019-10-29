@@ -1,0 +1,25 @@
+body{
+	width: 1050px;
+	height: 800px;
+}
+
+canvas{
+	background-color: green;
+}
+
+.GameStatistics{
+	width: 150px;
+	height: 100px;
+	float: right;
+	position: relative;
+	padding-right: 275px;
+}
+
+.log{
+	float: right;
+	width: 175px;
+	height: 200px;
+	margin-top:-35%;
+	padding-right: 250px;
+	padding-bottom: 300px;
+}
